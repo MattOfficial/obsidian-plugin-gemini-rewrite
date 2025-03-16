@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules/
+bun.lockb
+
+# Build outputs
+main.js
+*.js.map
+*.css.map
+.hotreload
+
+# Obsidian
+data.json
+
+# Environment variables
+.env
+
+# Editor directories and files
+.idea
+.vscode/*
+!.vscode/extensions.json
+.DS_Store 
