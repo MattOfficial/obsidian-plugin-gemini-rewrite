@@ -30,13 +30,15 @@ type GeminiModelKey =
   | "gemini-pro"
   | "gemini-1.5-pro"
   | "gemini-2.0-pro"
-  | "gemini-2.0-flash";
+  | "gemini-2.0-flash"
+  | "gemini-2.5-pro-exp-03-25";
 
 const GEMINI_MODELS: Record<GeminiModelKey, string> = {
   "gemini-pro": "Gemini Pro",
   "gemini-1.5-pro": "Gemini 1.5 Pro",
   "gemini-2.0-pro": "Gemini 2.0 Pro",
   "gemini-2.0-flash": "Gemini 2.0 Flash (Faster)",
+  "gemini-2.5-pro-exp-03-25": "Gemini 2.5 Pro (Experimental)",
 };
 
 const DEFAULT_SETTINGS: GeminiRewriteSettings = {
@@ -46,7 +48,7 @@ const DEFAULT_SETTINGS: GeminiRewriteSettings = {
   useEnvApiKey: true,
   maxHistoryItems: 10,
   rewriteHistory: [],
-  selectedModel: "gemini-2.0-flash",
+  selectedModel: "gemini-2.5-pro-exp-03-25",
 };
 
 export default class GeminiRewritePlugin extends Plugin {
